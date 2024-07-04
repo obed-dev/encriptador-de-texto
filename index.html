@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+     <header > 
+         
+         <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ac/d1/d2/acd1d2b8-831c-9a25-21d9-e420b374e2e2/AppIcon-Alura-0-0-1x_U007emarketing-0-10-0-85-220.png/1200x600wa.png" id="icono__alura" alt="icono de alura">    
+         <h1 class="titulo"> Obed Dev </h1>    
+     </header>
+
+
+
+   <main> 
+           <section class="container__encriptado">
+          
+            <textarea name="palabras" class="encriptador"  id="encripter" cols="30" rows="10" placeholder="Ingresa el texto aquí" autofocus></textarea>
+
+          
+          
+           
+
+
+            <div class="desencriptador">
+            <div class="desencriptador__container"> 
+                <p id="desencriptar"></p>    
+            </div>
+            </div>
+            
+            
+           </section>
+           
+           
+           <div class="botones__container"> 
+            <button class="botones__encrip"  onclick="textValue()"> Encriptar </button>
+            <button class="botones__encrip" onclick="desencriptarTexto()"  > Desencriptar </button>
+            <button class="botones__encrip" > Copiar </button>
+            
+
+           
+            <p> Favor escribir el texto sin signos de puntuacion y acento! </p>
+           </div>
+           
+   </main>    
+
+
+    
+
+<script src="app.js"></script>
+</body>
+</html>
