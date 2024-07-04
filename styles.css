@@ -101,6 +101,9 @@ p {
 @media (max-width: 1200px) {
     .container__encriptado,
     .encriptador {
+        display: flex;
+        flex-direction: column;
+        margin: 10px , 20px; 
         padding: 5rem;
     }
 
