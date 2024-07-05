@@ -23,6 +23,7 @@ header {
     z-index: 2;
 }
 
+
 #icono__alura {
     display: flex;
     justify-content: space-between;
@@ -240,4 +241,9 @@ p {
     font-size: 14px;
     font-family: 'Krona One', sans-serif;
   
+}
+
+.animate__fadeInLeft { 
+ 
+    animation-duration: 2s
 }
