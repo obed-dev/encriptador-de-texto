@@ -97,6 +97,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 5px;
 }
 
 .botones__encrip {
