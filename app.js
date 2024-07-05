@@ -104,14 +104,12 @@ document.getElementById('encripter').value = "";
 }
 
 
-  document.getElementById('encripter').addEventListener('input', () => {
-            let texto = document.getElementById('encripter').value;
-            texto = texto.replace(/[^a-z0-9,.ñ ¿?\n]/gi, '');
-            document.getElementById('encripter').value = texto;
+function filtrarTexto(texto) {
+  return texto.replace(/[^a-z\s]/gi, '');
+}
 
-            if (texto.length > 23) {
-                const palabras = texto.split(' ');
-                const palabrasCortas = palabras.filter(palabra => palabra.length <= 23);
-                document.getElementById('encripter').value = palabrasCortas.join(' ');
-            }
-        });
+document.getElementById('encripter').addEventListener('input', () => {
+  let texto = document.getElementById('encripter').value;
+  texto = filtrarTexto(texto);
+  document.getElementById('encripter').value = texto;
+});
