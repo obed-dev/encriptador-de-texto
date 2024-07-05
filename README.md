@@ -1,10 +1,13 @@
+Encriptador de Texto Alura Latam One Education
+
+Spanish :
 Este es el primer proyecto en Alura Latam Oracle One Education 💻
 El cual es un encriptador de modo minimalista y tambien agregue animaciones con animate.css para hacerlo mas interactivo!
 
 Espero su feedback y sugerencias!! 👨‍💻
 
 
-
+English :
 This is my first project in Alura Latam Oracle One Education 💻
 Which is a minimalist encrypter and also added animations with animate.css to make it more interactive!!
 
