@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    width: 10rem;
+    width: 8rem;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
 }
@@ -70,7 +70,12 @@ span {
     width: 100%;
     height: auto;
     padding: 10rem;
+   
 }
+
+
+
+
 
 .encriptador {
     display: flex;
@@ -125,7 +130,7 @@ span {
         display: flex;
         flex-direction: column;
         margin: 10px , 20px; 
-        padding: 5rem;
+        padding: 3.5rem;
     }
 
     .titulo {
@@ -138,6 +143,13 @@ span {
     
         transform: scale(1.1);
         transition: 0.5s;
+    }
+
+    p { 
+        font-size: 14px;
+        font-family: 'Krona One', sans-serif;
+        padding: 1rem;
+        margin: 10px 20px;
     }
 }
 
@@ -167,6 +179,14 @@ span {
     .botones__encrip {
         padding: 8px;
         margin: 5px 8px;
+    }
+
+
+    p { 
+        font-size: 14px;
+        font-family: 'Krona One', sans-serif;
+        padding: 1rem;
+        margin: 10px 20px;
     }
 }
 .desencriptador  { 
@@ -208,4 +228,5 @@ span {
 p { 
     font-size: 14px;
     font-family: 'Krona One', sans-serif;
+  
 }

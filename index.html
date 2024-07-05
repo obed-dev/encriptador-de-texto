@@ -19,34 +19,29 @@
 
    <main> 
            <section class="container__encriptado">
-          
+         
             <textarea name="palabras" class="encriptador"  id="encripter" cols="30" rows="10" placeholder="Ingresa el texto aquí" autofocus></textarea>
-
-          
-          
-           
-
-
+       
             <div class="desencriptador">
             <div class="desencriptador__container"> 
                 <p id="desencriptar"></p>    
             </div>
             </div>
-            
-            
-           </section>
+       
+        </section>
+           
            
            
            <div class="botones__container"> 
             <button class="botones__encrip"  onclick="textValue()"> Encriptar </button>
             <button class="botones__encrip" onclick="desencriptarTexto()"  > Desencriptar </button>
-            <button class="botones__encrip" > Copiar </button>
+            <button class="botones__encrip" onclick="copyText()" > Copiar </button>
             
 
            
             <p> Favor escribir el texto sin signos de puntuacion y acento! </p>
            </div>
-           
+        
    </main>    
 
 

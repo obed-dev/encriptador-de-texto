@@ -12,8 +12,11 @@ function  textValue () {
    
 
 
-    let valorInput = document.getElementById('encripter').value;
+    let valorInput = document.getElementById('encripter').value.toLowerCase();
 
+
+
+    
 
     const remplazos = { 
       "e": "enter",
@@ -28,8 +31,7 @@ function  textValue () {
 
    for (let i = 0; i < valorInput.length; i++) {
     let texto = valorInput[i];
-    
-
+ 
     textoEncriptado += remplazos[texto] || texto;
    }
 
@@ -67,4 +69,18 @@ document.getElementById('desencriptar').innerText = textoEncriptado;
 }
 
 
+function copyText() {
+  const textToCopy = document.getElementById("desencriptar").innerText;
+
+  // Usa la API del portapapeles para escribir el texto
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      console.log('Texto copiado al portapapeles con éxito!');
+    })
+    .catch(err => {
+      console.error('Error al copiar el texto: ', err);
+    });
+
+}
+ 
 
