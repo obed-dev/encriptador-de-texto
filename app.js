@@ -31,7 +31,10 @@ function  textValue () {
 
    for (let i = 0; i < valorInput.length; i++) {
     let texto = valorInput[i];
- 
+   
+
+
+
     textoEncriptado += remplazos[texto] || texto;
    }
 
@@ -101,3 +104,14 @@ document.getElementById('encripter').value = "";
 }
 
 
+  document.getElementById('encripter').addEventListener('input', () => {
+            let texto = document.getElementById('encripter').value;
+            texto = texto.replace(/[^a-z0-9,.ñ ¿?\n]/gi, '');
+            document.getElementById('encripter').value = texto;
+
+            if (texto.length > 23) {
+                const palabras = texto.split(' ');
+                const palabrasCortas = palabras.filter(palabra => palabra.length <= 23);
+                document.getElementById('encripter').value = palabrasCortas.join(' ');
+            }
+        });
