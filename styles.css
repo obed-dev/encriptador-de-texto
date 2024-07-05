@@ -33,6 +33,8 @@ header {
 }
 
 #icono__alura:hover {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -80,6 +82,7 @@ span {
     border-radius: 10px;
     word-wrap: break-word;
     background-color: rgba(243, 245, 252, 1);
+    
 }
 
 .botones__container {
