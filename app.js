@@ -72,15 +72,32 @@ document.getElementById('desencriptar').innerText = textoEncriptado;
 function copyText() {
   const textToCopy = document.getElementById("desencriptar").innerText;
 
-  // Usa la API del portapapeles para escribir el texto
+
+   if (textToCopy === "") {
+    alert('Error no se a copiado el texto')
+   } else {
+     // Usa la API del portapapeles para escribir el texto
   navigator.clipboard.writeText(textToCopy)
-    .then(() => {
-      console.log('Texto copiado al portapapeles con éxito!');
-    })
-    .catch(err => {
-      console.error('Error al copiar el texto: ', err);
-    });
+
+  .then(() => {
+    alert('El texto se a copiado con exito!')
+  
+  })
+  .catch(err => {
+    console.error('Error al copiar el texto: ', err);
+  });
+   }
+ 
 
 }
  
+
+function reset() {
+  
+document.getElementById('encripter').value = "";
+ document.getElementById('desencriptar').innerText = "";
+
+
+}
+
 

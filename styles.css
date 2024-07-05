@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -212,6 +213,8 @@ span {
 
 
 
+
+
 .desencriptador__container { 
      display: flex;
      justify-content: center;
@@ -222,6 +225,13 @@ span {
     font-size: 15px;
     font-family: 'Krona One', sans-serif;
     font-weight: bold;
+    white-space: pre-wrap; /* Mantener los saltos de línea y los espacios en blanco */
+     
+     margin: 10px;
+     margin-top: 20px;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    word-wrap: break-word; 
+    padding: 10px;
 
 }
 
