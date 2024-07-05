@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +43,22 @@ header {
     align-items: center;
     font-size: 30px;
     padding: 1rem;
-    font-family: "Rubik";
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+}
+.titulo:hover { 
+    
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+span { 
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+    color: #6c87dd;
+
+
 }
 
 .container__encriptado {
@@ -81,21 +98,22 @@ header {
     border-radius: 10px;
     margin: 10px 15px;
     background-color: #6c87dd;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .botones__encrip:hover {
     background-color: aliceblue;
+    color: #6c87dd;
+    font-weight: bold;
     transform: scale(1.1);
     transition: 0.5s;
     border-color: #6c87dd;
     cursor: pointer;
 }
 
-p {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
+
 
 /* Media Queries para Responsividad */
 @media (max-width: 1200px) {
@@ -109,6 +127,14 @@ p {
 
     .titulo {
         font-size: 25px;
+        font-family: 'Krona One', sans-serif;
+        font-weight: bold;
+    }
+
+    .titulo:hover { 
+    
+        transform: scale(1.1);
+        transition: 0.5s;
     }
 }
 
@@ -124,7 +150,15 @@ p {
     
 
     .titulo {
-        font-size: 18px;
+        font-size: 20px;
+        font-family: 'Krona One', sans-serif;
+        font-weight: bold;
+    }
+
+    .titulo:hover { 
+    
+        transform: scale(1.1);
+        transition: 0.5s;
     }
 
     .botones__encrip {
@@ -148,6 +182,7 @@ p {
     font-weight: bold;
     overflow: auto;
     word-wrap: break-word;
+    
 
 }
 
@@ -160,5 +195,14 @@ p {
      align-items: center;
 }
 
+#desencriptar { 
+    font-size: 15px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
 
+}
 
+p { 
+    font-size: 14px;
+    font-family: 'Krona One', sans-serif;
+}
