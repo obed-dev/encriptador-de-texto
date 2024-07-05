@@ -75,7 +75,7 @@ document.getElementById('desencriptar').innerText = textoEncriptado;
 function copyText() {
   const textToCopy = document.getElementById("desencriptar").innerText;
 
-
+    //uso esta condicional en caso de que el id desencriptar este vacio envie un error alert o de lo contrario envie una alerta de que se copio con exito
    if (textToCopy === "") {
     alert('Error no se a copiado el texto')
    } else {
