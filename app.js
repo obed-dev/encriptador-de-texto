@@ -49,7 +49,7 @@ document.getElementById('desencriptar').innerText = textoEncriptado;
     // funcion para desencriptar el texto
   function desencriptarTexto() {
     // Obtener el texto encriptado del elemento HTML
-    let textoEncriptado = document.getElementById("desencriptar").innerText;
+    let textoEncriptado = document.getElementById("encripter").value.toLowerCase();
 
     // Definimos los reemplazos inversos
     const reemplazosInversos = {
